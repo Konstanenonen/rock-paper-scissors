@@ -1,34 +1,35 @@
-
 //Randomly eturn either ‘Rock’, ‘Paper’ or ‘Scissors’.
 function computerPlay() {
   // add random int from 0-2 to a variable
-  const randomIndex = Math.round(Math.random()*2);
+  const randomIndex = Math.round(Math.random() * 2);
   // make array that contains strings "Rock" "Paper" and "Scissors"
   const options = ["Rock", "Paper", "Scissors"];
   // return array[randomIndex]
   return options[randomIndex];
 }
 
-
 // sanitize userInput (firstletter capital)
 // create winning pairs object
 // compare player's choice to computer's choice
 // if their are the same return tie
 // if their are the same return tie
-  // if not check from winning pairs object did the player win the computer
-    // if player wins return 1
-    // if player loses return -1
-    // if tie return 0
+// if not check from winning pairs object did the player win the computer
+// if player wins return 1
+// if player loses return -1
+// if tie return 0
 function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.split('')[0].toUpperCase() + 
-  playerSelection.split('').slice(1).join('').toLowerCase();
+  playerSelection =
+    playerSelection.split("")[0].toUpperCase() +
+    playerSelection.split("").slice(1).join("").toLowerCase();
   let winningPairs = {
-    "Rock": "Scissors",
-    "Paper": "Rock",
-    "Scissors": "Paper",
-  }
+    Rock: "Scissors",
+    Paper: "Rock",
+    Scissors: "Paper",
+  };
   if (playerSelection === computerSelection) {
-    console.log(`It's a tie! ${playerSelection} ties with ${computerSelection}`);
+    console.log(
+      `It's a tie! ${playerSelection} ties with ${computerSelection}`
+    );
     return 0;
   } else if (winningPairs[playerSelection] === computerSelection) {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
@@ -41,15 +42,15 @@ function playRound(playerSelection, computerSelection) {
 
 // Make a variable that keeps count is the player winning
 // Make a loop that spins 5 times
-  // play a game of rock-paper-scissors inside the loop
-  // the game will return 1, 0, or -1 depending if the player won
-  // add the return value to win count variable
+// play a game of rock-paper-scissors inside the loop
+// the game will return 1, 0, or -1 depending if the player won
+// add the return value to win count variable
 // if (win count is positive)
-  // report that the player won the whole game
+// report that the player won the whole game
 // if (win count is negative)
-  // report that the player lost the game
+// report that the player lost the game
 // else
-  // report a tie
+// report a tie
 function game() {
   let winningCount = 0;
 
