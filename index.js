@@ -16,8 +16,9 @@ function computerPlay() {
 // if their are the same return tie
 // if their are the same return tie
   // if not check from winning pairs object did the player win the computer
-    // if player wins return win
-    // if player loses return lose
+    // if player wins return 1
+    // if player loses return -1
+    // if tie return 0
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.split('')[0].toUpperCase() + 
   playerSelection.split('').slice(1).join('').toLowerCase();
