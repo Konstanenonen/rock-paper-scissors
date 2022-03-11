@@ -11,10 +11,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
+  background-color: rgb(240, 246, 240);
+  color: rgb(20, 47, 20)
 }
 
 h1 {
-  text-align: center;
+  margin: 50px 0;
 }
 
 .results-area {
@@ -24,3 +26,60 @@ h1 {
   gap: 25px;
 }
 
+.container {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+}
+
+img {
+  width: 100px;
+  height: 65px;
+}
+
+button {
+  border: none;
+  padding: 5px;
+  color: white;
+  background-color: rgb(98, 133, 95);
+  border-bottom: 2px solid rgb(98, 133, 95);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(71, 105, 68);
+  border-bottom: 2px solid rgb(71, 105, 68);
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
