@@ -1,5 +1,10 @@
-# Credits for the rock picture: Pille Kirsi
+# Rock Paper Scissors
+## [Link to live preview](konstanenonen.github.io/rock-paper-scissors)
 
-# Credits for the paper picture: Karolina Grabowska
+Simple Rock Paper Scissors game against the computer. First to five points wins.
+ 
+**Credits for the rock picture: Pille Kirsi**
 
-# Credits for the scissors picture: Mike
+**Credits for the paper picture: Karolina Grabowska**
+
+**Credits for the scissors picture: Mike**
