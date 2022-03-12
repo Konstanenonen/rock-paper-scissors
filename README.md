@@ -1,5 +1,5 @@
 # Rock Paper Scissors
-## [Link to live preview](konstanenonen.github.io/rock-paper-scissors)
+## [Link to live preview](https://konstanenonen.github.io/rock-paper-scissors/)
 
 Simple Rock Paper Scissors game against the computer. First to five points wins.
  
