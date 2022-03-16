@@ -124,6 +124,14 @@ img {
     font-size: 17px;
   }
 
+  .play-again-button {
+    width: 100px;
+  }
+
+  .results-area {
+    height: 150px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
